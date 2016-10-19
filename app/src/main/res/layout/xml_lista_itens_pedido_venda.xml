@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/corAzulClaro"
+    >
+
+    <View
+        android:id="@+id/Divisor2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_centerVertical="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/llLinha"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Divisor2"
+        >
+
+        <TextView
+            android:id="@+id/txtLabelCod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cod.:"
+            android:textSize="@dimen/tamanhoTexto"
+            android:textColor="@color/corBranco"
+            android:layout_marginLeft="@dimen/margemPadrao"
+            />
+
+        <TextView
+            android:id="@+id/txtID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textSize="@dimen/tamanhoTexto"
+            android:textColor="@color/corBranco"
+            android:layout_marginLeft="@dimen/margemPadrao"
+            />
+
+        <TextView
+            android:id="@+id/txtLabelDescricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descr.:"
+            android:textSize="@dimen/tamanhoTexto"
+            android:textColor="@color/corBranco"
+            android:layout_marginLeft="@dimen/margemPadrao"
+            />
+
+        <TextView
+            android:id="@+id/txtDescricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aspirina"
+            android:textSize="@dimen/tamanhoTexto"
+            android:textColor="@color/corBranco"
+            android:layout_marginLeft="@dimen/margemPadrao"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llLinha2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llLinha"
+        >
+
+        <TextView
+            android:id="@+id/txtLabelData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dt:"
+            android:textSize="@dimen/tamanhoTexto"
+            android:textColor="@color/corBranco"
+            android:layout_marginLeft="@dimen/margemPadrao"
+            />
+
+        <TextView
+            android:id="@+id/txtData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10/10/2016"
+            android:textSize="@dimen/tamanhoTexto"
+            android:textColor="@color/corBranco"
+            android:layout_marginLeft="@dimen/margemPadrao"
+            />
+
+        <TextView
+            android:id="@+id/txtLabelValor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Val:"
+            android:textSize="@dimen/tamanhoTexto"
+            android:textColor="@color/corBranco"
+            android:layout_marginLeft="@dimen/margemPadrao"
+            />
+
+        <TextView
+            android:id="@+id/txtValor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2,5"
+            android:textSize="@dimen/tamanhoTexto"
+            android:textColor="@color/corBranco"
+            android:layout_marginLeft="@dimen/margemPadrao"
+            />
+
+        <TextView
+            android:id="@+id/txtLabelPontuacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P:"
+            android:textSize="@dimen/tamanhoTexto"
+            android:textColor="@color/corBranco"
+            android:layout_marginLeft="@dimen/margemPadrao"
+            />
+
+        <TextView
+            android:id="@+id/txtPontuacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="@dimen/tamanhoTexto"
+            android:textColor="@color/corBranco"
+            android:layout_marginLeft="@dimen/margemPadrao"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_tela_detalhes_venda"
+    tools:context="com.example.galdino.appbemestaresaude.Telas.TelaDetalhesVenda"
+    android:background="@drawable/fundo_gradient">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DETALHES DA VISITA"
+        android:textColor="@color/corAzulClaro"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/llTitulos"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtTitulo"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data"
+            android:textColor="@color/corAzulClaro"
+            android:textSize="@dimen/tamanhoTexto"
+            android:layout_marginTop="30dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textColor="@color/corAzulClaro"
+            android:textSize="@dimen/tamanhoTexto"
+            android:layout_marginTop="@dimen/margemPadrao"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Domicílio"
+            android:textColor="@color/corAzulClaro"
+            android:textSize="@dimen/tamanhoTexto"
+            android:layout_marginTop="@dimen/margemPadrao"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cliente"
+            android:textColor="@color/corAzulClaro"
+            android:textSize="@dimen/tamanhoTexto"
+            android:layout_marginTop="@dimen/margemPadrao"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hora início"
+            android:textColor="@color/corAzulClaro"
+            android:textSize="@dimen/tamanhoTexto"
+            android:layout_marginTop="@dimen/margemPadrao"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hora Fim"
+            android:textColor="@color/corAzulClaro"
+            android:textSize="@dimen/tamanhoTexto"
+            android:layout_marginTop="@dimen/margemPadrao"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llConteudos"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtTitulo"
+        android:layout_toRightOf="@+id/llTitulos"
+        android:layout_marginLeft="@dimen/margemPadrao"
+        >
+
+        <TextView
+            android:id="@+id/txtData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10/05/2016"
+            android:textColor="@color/corAzulClaro"
+            android:textSize="@dimen/tamanhoTexto"
+            android:layout_marginTop="30dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastro com venda"
+            android:textColor="@color/corAzulClaro"
+            android:textSize="@dimen/tamanhoTexto"
+            android:layout_marginTop="@dimen/margemPadrao"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sao João"
+            android:textColor="@color/corAzulClaro"
+            android:textSize="@dimen/tamanhoTexto"
+            android:layout_marginTop="@dimen/margemPadrao"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bernardo Ramos"
+            android:textColor="@color/corAzulClaro"
+            android:textSize="@dimen/tamanhoTexto"
+            android:layout_marginTop="@dimen/margemPadrao"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="14:20"
+            android:textColor="@color/corAzulClaro"
+            android:textSize="@dimen/tamanhoTexto"
+            android:layout_marginTop="@dimen/margemPadrao"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="15:05"
+            android:textColor="@color/corAzulClaro"
+            android:textSize="@dimen/tamanhoTexto"
+            android:layout_marginTop="@dimen/margemPadrao"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

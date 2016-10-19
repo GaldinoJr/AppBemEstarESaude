@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_tela_cliente"
+    tools:context="com.example.galdino.appbemestaresaude.Telas.Telas.TelaCliente"
+    android:background="@drawable/fundo_gradient">
+
+    <EditText
+        android:id="@+id/edtIdCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:hint=" CARTÃO"
+        android:textSize="@dimen/tamanhoTexto"
+        android:textColor="@color/corAzulEscuro"
+        android:textColorHint="@color/corCinza"
+        android:layout_gravity="center"
+        android:gravity="center|left"
+        android:theme="@style/MyEditTextTheme"
+        android:background="@drawable/fundo_txt"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"/>
+
+    <EditText
+        android:id="@+id/edtNmCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:hint=" NOME"
+        android:textSize="@dimen/tamanhoTexto"
+        android:textColor="@color/corAzulEscuro"
+        android:textColorHint="@color/corCinza"
+        android:layout_gravity="center"
+        android:gravity="center|left"
+        android:theme="@style/MyEditTextTheme"
+        android:textAlignment="gravity"
+        android:background="@drawable/fundo_txt"
+        android:ems="10"
+        android:layout_below="@id/edtIdCliente"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/margemPadrao"
+        />
+
+    <EditText
+        android:id="@+id/edtCpf"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:hint=" CPF"
+        android:textSize="@dimen/tamanhoTexto"
+        android:textColor="@color/corAzulEscuro"
+        android:textColorHint="@color/corCinza"
+        android:layout_gravity="center"
+        android:gravity="center|left"
+        android:theme="@style/MyEditTextTheme"
+        android:textAlignment="gravity"
+        android:background="@drawable/fundo_txt"
+        android:ems="10"
+        android:layout_below="@id/edtNmCliente"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/margemPadrao"
+        />
+
+    <EditText
+        android:id="@+id/edtEndereco"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:hint=" ENDEREÇO"
+        android:textSize="@dimen/tamanhoTexto"
+        android:textColor="@color/corAzulEscuro"
+        android:textColorHint="@color/corCinza"
+        android:layout_gravity="center"
+        android:gravity="center|left"
+        android:theme="@style/MyEditTextTheme"
+        android:textAlignment="gravity"
+        android:background="@drawable/fundo_txt"
+        android:ems="10"
+        android:layout_below="@id/edtCpf"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/margemPadrao"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/llBotoesAcoes"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnPesquisar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:layout_alignParentBottom="true"
+            android:text="PESQUISAR"
+            android:textColor="@color/corBranco"
+            android:background="@drawable/fundo_botao"/>
+
+        <Button
+            android:id="@+id/btnLimpar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/corBranco"
+            android:layout_weight="0.33"
+            android:text="LIMPAR"
+            android:background="@drawable/fundo_botao"/>
+
+        <Button
+            android:id="@+id/btnIncluir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/corBranco"
+            android:text="INCLUIR"
+            android:layout_alignTop="@+id/btnHistorico"
+            android:background="@drawable/fundo_botao"
+            android:layout_weight="0.33"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llBotoesMaisInfromacoes"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:weightSum="1"
+        android:visibility="gone"
+        >
+
+        <Button
+            android:id="@+id/btnHistorico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:layout_alignParentBottom="true"
+            android:text="HISTÓRICO"
+            android:textColor="@color/corBranco"
+            android:background="@drawable/fundo_botao"/>
+
+        <Button
+            android:id="@+id/btnPontos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/corBranco"
+            android:layout_weight="0.33"
+            android:text="PONTOS"
+            android:background="@drawable/fundo_botao"/>
+
+        <Button
+            android:id="@+id/btnAlterar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/corBranco"
+            android:text="ALTERAR"
+            android:layout_alignTop="@+id/btnHistorico"
+            android:background="@drawable/fundo_botao"
+            android:layout_weight="0.33"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

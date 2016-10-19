@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AppBemEstarESaude</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_tela_roteiro">TelaRoteiro</string>
+    <string name="title_activity_tela_cliente">TelaCliente</string>
+    <string name="title_activity_tela_check_in">TelaCheckIn</string>
+    <string name="title_activity_tela_inicial_check_in">TelaInicialCheckIn</string>
+    <string name="title_activity_tela_lista_clientes">TelaListaClientes</string>
+    <string name="title_activity_tela_historico">TelaHistorico</string>
+    <string name="title_activity_tela_detalhes_venda">TelaDetalhesVenda</string>
+    <string name="title_activity_tela_pontos">TelaPontos</string>
+    <string name="title_activity_tela_check_out">TelaCheckOut</string>
+</resources>
